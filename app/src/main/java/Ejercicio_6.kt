@@ -1,9 +1,9 @@
 fun main(){
     println("Distancia del conductor en km: ")
 
-    val conductor = readLine()?.toInt()
+    var conductor = readLine()?.toInt()
     println("Disponibilidad: ")
-    val disponible = readLine().toBoolean()
+    var disponible = readLine().toBoolean()
 
     if (conductor != null) {
         if (conductor <= 0.5 && disponible == true){

@@ -1,11 +1,10 @@
 fun main(){
     println("Distancia del conductor en km: ")
 
-    var conductor = readLine()?.toInt()
+    var conductor = readLine()!!.toFloat()
     println("Disponibilidad: ")
-    var disponible = readLine().toBoolean()
+    var disponible = readLine()!!.toBoolean()
 
-    if (conductor != null) {
         if (conductor <= 0.5 && disponible == true){
             println("Listo para iniciar recorrido")
         }else if (conductor <= 0.5 && disponible == false) {
